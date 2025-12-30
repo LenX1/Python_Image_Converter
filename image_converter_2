@@ -6,7 +6,6 @@ file_path = ''  # PathToFile
 # Output Types : png - jpg (jpeg) - gif - bmp - webp
 out_type = ''  # OutputFileType
 
-
 filepath, filename = os.path.split(file_path)
 filenames = filename.split('.')
 
