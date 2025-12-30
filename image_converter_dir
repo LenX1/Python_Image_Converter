@@ -1,0 +1,15 @@
+
+from PIL import Image
+import os
+from pathlib import Path
+
+dir_path = ''  # PathToDir
+input_type = ''  # input type
+output_type = ''  # output type
+# Output Types : png - jpg (jpeg) - gif - bmp - webp
+
+for file in Path(dir_path).glob(f'*.{input_type}'):
+    out_path = str(file).split('.')[0]+"."+output_type
+    image = Image.open(file)
+    image_converted = image.convert('RGB')
+    image_converted.save(out_path)
