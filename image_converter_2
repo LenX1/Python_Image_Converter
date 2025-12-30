@@ -3,8 +3,8 @@ from PIL import Image
 import os
 
 file_path = ''  # PathToFile
-# Output Types : png - jpg (jpeg) - gif - bmp - webp
 out_type = ''  # OutputFileType
+# Output Types : png - jpg (jpeg) - gif - bmp - webp
 
 filepath, filename = os.path.split(file_path)
 filenames = filename.split('.')
